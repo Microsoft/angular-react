@@ -1,0 +1,45 @@
+{
+  "$schema": "../../node_modules/ng-packagr/package.schema.json",
+  "name": "angular-react-toolkit",
+  "version": "1.0.0",
+  "ngPackage": {
+    "lib": {
+      "entryFile": "public-api.ts",
+      "umdModuleIds": {
+        "react": "React",
+        "react-dom": "ReactDOM",
+        "@angular-react/core": "ɵa",
+        "office-ui-fabric-react": "Fabric"
+      }
+    },
+    "dest": "../../angular-react-toolkit"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/microsoft/angular-react/issues"
+  },
+  "homepage": "https://github.com/microsoft/angular-react#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microsoft/angular-react.git"
+  },
+  "keywords": [
+    "angular",
+    "react",
+    "components",
+    "microsoft",
+    "office",
+    "fabric"
+  ],
+  "private": false,
+  "peerDependencies": {
+    "@angular-react/core": "^1.0.0",
+    "@angular/common": "^8.0.2",
+    "@angular/core": "^8.0.2",
+    "@angular/platform-browser-dynamic": "^8.0.2",
+    "@angular/platform-browser": "^8.0.2",
+    "office-ui-fabric-react": "7.82.2",
+    "react-dom": "~16.8.6",
+    "react": "^16.8.6"
+  }
+}

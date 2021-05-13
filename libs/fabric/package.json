@@ -10,8 +10,7 @@
         "react-dom": "ReactDOM",
         "@angular-react/core": "ɵa",
         "office-ui-fabric-react": "Fabric"
-      },
-      "comments": "none"
+      }
     },
     "dest": "../../@angular-react/fabric"
   },

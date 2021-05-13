@@ -19,8 +19,7 @@
       "umdModuleIds": {
         "react": "React",
         "react-dom": "ReactDOM"
-      },
-      "comments": "none"
+      }
     },
     "dest": "../../@angular-react/core"
   },

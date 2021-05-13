@@ -10,8 +10,7 @@
         "react-dom": "ReactDOM",
         "@angular-react/core": "ɵa",
         "semantic-ui-react": "semanticUIReact"
-      },
-      "comments": "none"
+      }
     },
     "dest": "../../@angular-react/semantic-ui"
   },
