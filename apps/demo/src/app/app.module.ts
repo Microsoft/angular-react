@@ -36,7 +36,8 @@ import {
   FabTextFieldModule,
   FabPeoplePickerModule,
   FabTagPickerModule,
-  FabProgressIndicatorModule
+  FabProgressIndicatorModule,
+  FabTeachingBubbleModule
 } from '@angular-react/fabric';
 import { NgModule } from '@angular/core';
 import { NxModule } from '@nrwl/nx';
@@ -84,7 +85,8 @@ import { CounterComponent } from './counter/counter.component';
     FabTextFieldModule,
     FabPeoplePickerModule,
     FabTagPickerModule,
-    FabProgressIndicatorModule
+    FabProgressIndicatorModule,
+    FabTeachingBubbleModule
   ],
   declarations: [AppComponent, CounterComponent],
   bootstrap: [AppComponent],

@@ -257,4 +257,14 @@
   <fab-people-picker [inputProps]="{placeholder: 'Search for a person'}" [pickerSuggestionsOptions]="{noResultsFoundText: 'No results found', loadingText: 'Loading'}"  [selectedItems]="peoplePickerSelectedItems" (onChange)="updatePeoplePickerSelectedItems($event)" [resolveSuggestions]="peoplePickerInputChanged"></fab-people-picker>
   <div>{{peoplePickerSelectedItems.length}} item(s) selected in the people picker</div>
   <fab-progress-indicator bar-height="4"  [percentComplete]="0.35" description="Progress indicator description" label="Progress indicator label"></fab-progress-indicator>
- </div>
+  <fab-default-button class="calloutTarget" (click)="onOpenCalloutClicked()">Callout target</fab-default-button>
+  <fab-callout target=".calloutTarget" [isBeakVisible]="true" [gapSpace]="0" [doNotLayer]="false" 
+    [hidden]="false" role="alert" [beakWidth]="16" (onDismiss)="onCalloutDismiss()" *ngIf="isCalloutVisible">
+    Callout content
+  </fab-callout>
+  <fab-default-button class="teachingBubbleTarget" (click)="onOpenTeachingBubbleClicked()">Teaching Bubble target</fab-default-button>
+  <fab-teaching-bubble target=".teachingBubbleTarget" [primaryButtonProps]="teachingBubblePrimaryButtonProps" [secondaryButtonProps]="teachingBubbleSecondaryButtonProps" headline="Teaching bubble headline" hasCloseButton={true}
+  closeButtonAriaLabel="Close" (onDismiss)="onTeachingBubbleDismiss()" *ngIf="isTeachingBubbleVisible">
+    Teaching bubble content
+  </fab-teaching-bubble>
+</div>

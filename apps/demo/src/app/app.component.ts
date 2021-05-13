@@ -9,6 +9,9 @@ import {
   ICheckboxProps,
   IPersonaProps,
   IPeoplePickerProps,
+  IButtonProps,
+  BaseButton,
+  Button
 } from 'office-ui-fabric-react';
 import { RenderPropOptions } from '@angular-react/core';
 import { FabDropdownComponent } from '@angular-react/fabric';
@@ -101,6 +104,35 @@ export class AppComponent {
     { field1: 'f1content4' },
     { field2: 'f2content5' },
   ];
+
+  teachingBubblePrimaryButtonProps: IButtonProps = {
+    children: 'Primary action',
+    onClick: (event:  React.MouseEvent<HTMLButtonElement | HTMLDivElement | HTMLAnchorElement | BaseButton | Button | HTMLSpanElement, MouseEvent>) => alert('Primary action clicked'),
+  };
+
+  teachingBubbleSecondaryButtonProps: IButtonProps = {
+    children: 'Maybe later',
+    onClick: (event: React.MouseEvent<HTMLButtonElement | HTMLDivElement | HTMLAnchorElement | BaseButton | Button | HTMLSpanElement, MouseEvent>) => alert('Maybe later clicked'),
+  };
+
+  isCalloutVisible = false;
+  isTeachingBubbleVisible = false;
+
+  onOpenCalloutClicked() {
+    this.isCalloutVisible = true;
+  }
+
+  onOpenTeachingBubbleClicked() {
+    this.isTeachingBubbleVisible = true;
+  }
+
+  onCalloutDismiss(event) {
+    this.isCalloutVisible = false;
+  }
+
+  onTeachingBubbleDismiss(event) {
+    this.isTeachingBubbleVisible = false;
+  }
 
   onNewClicked() {
     console.log('New clicked');
